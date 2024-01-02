@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>لغة الإشارة</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="shortcut icon" type="image/png" href="Images/asl_logo.ico" />
+   <link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500" rel="stylesheet">
+   <link rel="stylesheet" href="CSS/style2.css">
+   <link rel="stylesheet" href="CSS/animate.css">
+   <script src="js/build.js"></script>
+
+</head>
+<body>
+
+   <header class="header">
+      
+      <section class="flex">
+   
+         <a href="home.html" class="logo">إنصات | Insat</a>
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="بحث ..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">محمد</h3>
+            <p class="role">مترجم</p>
+            <a href="profile.html" class="btn">عرض الملف الشخصي</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">تسجيل</a>
+               <a href="register.html" class="option-btn">تسجيل الدخول</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">محمد</h3>
+         <p class="role">مترجم</p>
+         <a href="profile.html" class="btn">عرض الملف الشخصي</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+         <a href="Index.html"><i class="fas fa-question"></i><span>من نحن؟</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>دورات تدريبية</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>المعلمون والمترجمين</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>تواصل معنا</span></a>
+         <a href="eye.html"><i class="fa-solid fa-vr-cardboard"></i><span>جولة ثلاثية الأبعاد</span></a>
+         <a href="SignLang.html"><i class="fa-solid fa-hands-asl-interpreting"></i><span>ترجمة فورية</span></a>
+      </nav>
+   
+   </div>
+
+
+<!-- شاشة الترحيب -->
+<div id="welcomeContainer" class="animated">
+   <div id="welcomeScreen">
+       <h1>مرحبًا بكم في مترجم لغة الإشارة</h1>
+       <h3 class="animated fadeInUp delay-2s">رنيم، قمر، عبدالله</h3>
+   </div>
+   <button id="proceedButton">المتابعة</button>
+ </div>
+ 
+ <!-- شريط العنوان يشرح مرحلة البرنامج 
+ (مثل: التعليمات للتدريب، التوقعات، ومكالمات الفيديو) -->
+ <div id="titleBar">
+   <h1 id="stage">تدريب الإشارات</h1>
+   <h3 id="steps">قم بتدريب حوالي 30 عينة من إشارتك البدء و30 للإيقاف.</h3>
+   <button id="nextButton" class="animated flash delay-3s">التالي</button>
+   <button id="predictButton" class="animated flash slideInRight faster">ترجمة</button>
+   <button id="backButton" class="animated slideInLeft faster">العودة للتدريب</button>
+   <button id="videoCallBtn" class="videoCallBtn animated slideInRight faster">مكالمة فيديو</button>
+ </div>
+ 
+ <!-- شريط الحالة يعرض حالة الترجمة -->
+ <div id="status">
+   <p id="status-text">الحالة: غير جاهز</p>
+ </div>
+ 
+ <!-- نافذة المترجم تعرض فيديو المستخدم، أزرار متنوعة، وتحتوي
+ على شاشات التدريب والترجمة -->
+ <div id="translatorWindow">
+ 
+   <!-- حامل التدريب الأولي ينشئ الشاشة حيث يقوم المستخدمون بتدريب إشارات البدء والإيقاف -->
+   <div id="initialTrainingHolder">
+       <img src="" alt="علامة صح" id="checkmark_startButton" class="checkMark">
+       <button id="startButton" class="trainButton ">إشارة البدء</button>
+       <button id="clear_startButton" class="clearButton">مسح</button>
+       <h3 id="counter_startButton" class="counter"></h3>
+ 
+       <button id="stopButton" class="trainButton ">إشارة الإيقاف</button>
+       <button id="clear_stopButton" class="clearButton">مسح</button>
+       <h3 id="counter_stopButton" class="counter"></h3>
+       <img src="" alt="علامة صح" id="checkmark_stopButton" class="checkMark">
+   </div>
+ 
+   <!-- حامل الفيديو يعرض التغذية الفيديو للمستخدم للتدريب والترجمة.
+   يعرض أيضًا تغذية مكالمة الفيديو بمجرد قرار المستخدم القيام بذلك -->
+   <div id="videoHolder" class="videoContainerTrain">
+       <video id="video" class="videoTrain" src='' muted autoplay playsinline></video>
+       <iframe src="https://tokbox.com/embed/embed/ot-embed.js?embedId=f37957b6-0f91-4fc5-90ce-f818cc85b5bf&room=DEFAULT_ROOM&iframe=true"
+           width=650 height=370 allow="microphone; camera" id="videoCall"></iframe>
+   </div>
+ 
+   <!-- حامل التدريب يعرض الشاشة حيث يقوم المستخدمون بإضافة وتدريب إشارات جديدة -->
+   <div id="trainingHolder">
+       <h5 id="add-gesture">إضافة إشارة</h5>
+       <img src="Images/plus_sign.svg" alt="علامة الجمع" id="plus_sign" class="plus_sign animated">
+       <form id="add-word" autocomplete="off">
+           <input type="text" id="new-word" placeholder="عنوان الإشارة الجديدة">
+           <input type="submit" id="submit-word" value="إضافة كلمة &#9658;">
+       </form>
+       <button id="doneRetrain" class="doneRetrain">الانتهاء من إعادة التدريب</button>
+ 
+       <div id="trainingCommands"></div>
+   </div>
+ 
+   <!-- حامل الترجمة هو حيث يتم عرض بطاقة الإشارة والنص الذي تم ترجمته. -->
+   <div id="translationHolder">
+       <div id="translatedCard">
+       </div>
+       <h3 id="translationText">ابدأ الإشارة!</h3>
+   </div>
+ </div>
+ 
+ <!-- حامل البطاقات المدربة يحتوي على جميع بطاقات الإشارات المدربة.
+ يقع خارج نوافذ التدريب والترجمة لأنه يجب عرضه على كلا الشاشتين -->
+ <div id="trainedCardsHolder">
+ </div>
+ 
+ 
+ <!-- رابط ملف الـ JS الخاص -->
+ <script src="js/script.js"></script>
+ 
+    
+ </body>
+ </html>
+ 

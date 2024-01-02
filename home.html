@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>الصفحة الرئيسية</title>
+
+   <!-- رابط خطوط أوسم - CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- رابط ملف CSS الخاص -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+      
+      <section class="flex">
+   
+         <a href="home.html" class="logo">إنصات | Insat</a>
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="ابحث هنا..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">محمد</h3>
+            <p class="role">مترجم</p>
+            <a href="profile.html" class="btn">عرض الملف الشخصي</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">تسجيل</a>
+               <a href="register.html" class="option-btn">تسجيل الدخول</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">محمد</h3>
+         <p class="role">مترجم</p>
+         <a href="profile.html" class="btn">عرض الملف الشخصي</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+         <a href="Index.html"><i class="fas fa-question"></i><span>من نحن؟</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>دورات تدريبية</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i><span>المعلمون والمترجمون</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>تواصل معنا</span></a>
+         <a href="eye.html"><i class="fa-solid fa-vr-cardboard"></i><span>جولة ثلاثية الأبعاد</span></a>
+         <a href="SignLang.html"><i class="fa-solid fa-hands-asl-interpreting"></i><span>ترجمة فورية</span></a>
+      </nav>
+   
+   </div>
+
+<section class="home-grid">
+
+   <h1 class="heading">اختيارات سريعة</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3 class="title">الإعجابات والتعليقات</h3>
+         <p class="likes">مجموع الإعجابات: <span>25</span></p>
+         <a href="#" class="inline-btn">عرض الإعجابات</a>
+         <p class="likes">مجموع التعليقات: <span>12</span></p>
+         <a href="#" class="inline-btn">عرض التعليقات</a>
+         <p class="likes">قوائم التشغيل المحفوظة: <span>4</span></p>
+         <a href="#" class="inline-btn">عرض قوائم التشغيل</a>
+      </div>
+
+      <!-- ... باقي النصوص ... -->
+
+      <div class="box">
+         <h3 class="title">التصنيفات الرئيسية</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-code"></i><span>تطوير</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>أعمال</span></a>
+            <a href="#"><i class="fas fa-pen"></i><span>تصميم</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>تسويق</span></a>
+            <a href="#"><i class="fas fa-music"></i><span>موسيقى</span></a>
+            <a href="#"><i class="fas fa-camera"></i><span>تصوير</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>برمجيات</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>علوم</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">المواضيع الشائعة</h3>
+         <div class="flex">
+            <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+            <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+            <a href="#"><i class="fab fa-js"></i><span>جافاسكريبت</span></a>
+            <a href="#"><i class="fab fa-react"></i><span>رياكت</span></a>
+            <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+            <a href="#"><i class="fab fa-bootstrap"></i><span>بوتستراب</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">كن معلمًا</h3>
+         <a href="teachers.html" class="inline-btn">ابدأ الآن</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="courses">
+
+   <h1 class="heading">دوراتنا</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-2.jpg" alt="">
+            <div class="info">
+               <h3>رنيم</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة HTML كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-7.jpg" alt="">
+            <div class="info">
+               <h3>قمر</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-2.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة CSS كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-3.jpg" alt="">
+            <div class="info">
+               <h3>عبدالله</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-3.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة JS كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-4.jpg" alt="">
+            <div class="info">
+               <h3>عبدالمحسن</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-4.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة Bootstrap كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-5.jpg" alt="">
+            <div class="info">
+               <h3>مريم</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-5.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة JQuery كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-8.jpg" alt="">
+            <div class="info">
+               <h3>قاسم</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-6.png" alt="">
+            <span>10 فيديوهات</span>
+         </div>
+         <h3 class="title">دورة SASS كاملة</h3>
+         <a href="playlist.html" class="inline-btn">عرض القائمة</a>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="courses.html" class="inline-option-btn">عرض جميع الدورات</a>
+   </div>
+
+</section>
+
+
+<!-- رابط ملف JS الخاص -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
